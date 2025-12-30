@@ -17,6 +17,6 @@ python ProteinMPNN/protein_mpnn_run.py \
         --sampling_temp "0.1"
 
 # Evaluate the best design
-python evaluate.py \
+python scripts/evaluate.py \
         --input_fa "bbb_designs_v1/seqs/tfr_clean.fa" \
         --output_fa "bbb_designs_v1/best_shuttle.fa"

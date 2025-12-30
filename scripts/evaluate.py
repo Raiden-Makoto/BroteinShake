@@ -32,7 +32,13 @@ def extract_best_design(fasta_file: str, output_file: str) -> None:
         print(f"Success! Best design ({best_score}) saved to {output_file}")
 
 if __name__ == "__main__":
-    # Point this to your actual output path from ProteinMPNN
-    input_fa = "bbb_designs_v1/seqs/tfr_clean.fa" 
-    output_fa = "bbb_designs_v1/best_shuttle.fa"
-    extract_best_design(input_fa, output_fa)
+    import argparse
+    
+    parser = argparse.ArgumentParser(description="Extract best design from ProteinMPNN output")
+    parser.add_argument("--input_fa", type=str, default="bbb_designs_v1/seqs/tfr_clean.fa",
+                        help="Input FASTA file path (relative to project root)")
+    parser.add_argument("--output_fa", type=str, default="bbb_designs_v1/best_shuttle.fa",
+                        help="Output FASTA file path (relative to project root)")
+    
+    args = parser.parse_args()
+    extract_best_design(args.input_fa, args.output_fa)
