@@ -3,3 +3,7 @@ __pycache__/
 *.ent
 ProteinMPNN/
 .env
+*.pdb
+!Sample18.pdb
+*.fa
+!bbb_designs_v1/best_shuttle.fa
