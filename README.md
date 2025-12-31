@@ -15,3 +15,20 @@ The lead candidate was developed using an integrated machine learning and physic
 3. Structure Prediction (ESMFold): Validated the 3D folding of the top candidates using a 3-billion parameter protein language model.
 
 4. Structural Refinement (ChimeraX): Performed energy minimization and hydrogen-bond optimization to resolve steric clashes.
+
+## Project Results
+**Sample 18** emerged as the superior design based on its combination of low energy scores and structural accuracy.
+
+**Optimal Sequence:** `AGGPQYCKLDDNHYYLKYGDKVFLITVSDISVLDEKTDIKLTTPADLANCLPNPADAAGIAAFLTALGWDWAKDKPPLCRPKSSSTGTCIQLDISKQPETKEQGEKILAGLKKLFPGFVDKCKEGKKCYLNIYECGSPSSGNYCGPEYLDKCKFTR` (see `Sample18.pdb` for the folded structure)
+
+### Technical Specifications: Sample 18 (Lead Candidate)
+
+| Metric | Value | Interpretation |
+| :--- | :--- | :--- |
+| **Design ID** | **Sample 18** | Top-scoring candidate from ProteinMPNN generation. |
+| **Sequence Recovery** | **$45.51$%** | Balanced optimization vs. template preservation. |
+| **ProteinMPNN Score** | **$0.7647$** | High-probability sequence for the target fold. |
+| **Backbone RMSD** | **$0.751$ Å** | Near-perfect atomic (<1.0 is excellent) mimicry of viral template. |
+| **Fold Confidence** | **pLDDT $> 90$** | ESMFold "Blue" status; highly confident 3D prediction. |
+| **Binding Interface** | **$8 \rightarrow 0$ Clashes** | Resolved via AM1-BCC charge assignment & H-bond optimization. |
+| **Target Receptor** | **hTfR1** | Human Transferrin Receptor (Apical Domain). |
