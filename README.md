@@ -16,6 +16,11 @@ The lead candidate was developed using an integrated machine learning and physic
 
 4. Structural Refinement (ChimeraX): Performed energy minimization and hydrogen-bond optimization to resolve steric clashes.
 
+## Web Application
+We have also developed a Gradio application for protein redesign using ProteinMPNN and structural refinement with OpenMM. The interactive web interface can be accessed [here](https://42cummer-broteinshake.hf.space/)
+
+Evaluated the pipeline on 1UBQ (ubiquitin) and 1PGA (Protein G) benchmarks, achieving 0.42 Å core RMSD (pLDDT $> 80$) and high-fidelity scaffold preservation.
+
 ## Project Results
 **Sample 18** emerged as the superior design based on its combination of low energy scores and structural accuracy.
 
